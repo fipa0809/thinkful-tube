@@ -1,0 +1,114 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Quicksand', sans-serif;
+	display: block;
+	text-align: center;
+}
+
+
+
+header img {
+	height: 100%;
+	width: 100%;
+	opacity: 0.5;
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+
+h1 {
+	font-size: 40px;
+	margin: 0 auto;
+	padding-top: 10px;
+	color: black;
+}
+
+.js-search-form {
+	height: 0px;
+}
+
+input {
+	height: 55px;
+	width: 45%;
+	border-radius: 5px;
+	position: relative;
+	top: -120px;
+	left: 0px;
+	bottom: 10px;
+	font-size: 26px;
+}
+
+button {
+	height: 50px;
+	width: 80px;
+	border-radius: 3px;
+	font-size: 100%;
+	position: relative;
+	top: -125px;
+}
+
+.row {
+	text-align: center;
+	margin: 0 auto;
+	position: relative;
+	left: 70px;
+}
+
+.img-thumbnail {
+	height: 60%;
+	width: 100%;
+	border-radius: 5px;
+	border: 2px solid #2A0505;
+	position: relative;
+	top: 5px;
+}
+
+.img-thumbnail:hover {
+	-webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    cursor: pointer;
+}
+
+.js-search-results li p {
+	font-size: 20px;
+	font-weight: bold;
+	overflow: scroll;
+	color: gray;
+	border-radius: 3px;
+}
+
+.js-search-results li {
+	margin-top: 10px;
+	text-align: center;
+    list-style: none;
+    float: left;
+    max-width: 25%;
+    height: 400px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #FEEFD8;
+    border-radius: 10px;
+    overflow: scroll;
+    box-shadow: 10px 5px 10px #999;
+    animation-duration: 1s;
+ 	animation-name: slidein;
+}
+   
+         
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}         
+
